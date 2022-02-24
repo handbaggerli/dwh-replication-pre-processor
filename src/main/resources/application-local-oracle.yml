@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@ldap://poid.centrisag.ch:389/MT03122_INTCDC,cn=OracleContext,dc=Centris AG,dc=Organisationen,dc=ch
+    username: MT03122_ASE03101_STAGING_WORK
+    password: g!G0OlzXbhUv8SfsZ:N\Lo*F43
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    show-sql: false
+    database: oracle
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+        order_inserts: true
+        order_update: true
+        jdbc:
+          batch_size: 1000
